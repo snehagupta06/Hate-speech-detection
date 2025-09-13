@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hate Speech Detection - Project Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2b4eff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2b4eff;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    img {
+      display: block;
+      margin: 15px auto;
+      max-width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hate Speech Detection using Machine Learning</h1>
+  <p>Project Report</p>
+</header>
+
+<section>
+  <h2>Abstract</h2>
+  <p>
+    This project focuses on detecting hate speech in text using 
+    <b>Natural Language Processing (NLP)</b> and <b>Machine Learning</b>. 
+    A <b>Support Vector Machine (LinearSVC)</b> model trained on a balanced dataset is used 
+    with TF-IDF vectorization to classify text as either <b>Hate Speech (1)</b> or 
+    <b>Non-Hate Speech (0)</b>. 
+  </p>
+</section>
+
+<section>
+  <h2>Methodology</h2>
+  <ul>
+    <li>Data preprocessing (cleaning, tokenization, balancing dataset)</li>
+    <li>Feature extraction using TF-IDF Vectorization</li>
+    <li>Model training with Support Vector Classifier (Linear SVC)</li>
+    <li>Evaluation using precision, recall, F1-score, and ROC-AUC</li>
+    <li>Deployment using a Flask API with a simple web interface</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Results & Analysis</h2>
+  <p>The following figures show the performance metrics of the model:</p>
+  <h3>Classification Report</h3>
+  <img src="../reports/classification_report.txt" alt="Classification Report">
+  
+  <h3>Confusion Matrix</h3>
+  <img src="../reports/confusion_matrix.png" alt="Confusion Matrix">
+
+  <h3>Training Confusion Matrix</h3>
+  <img src="../reports/train_confusion_matrix.png" alt="Training Confusion Matrix">
+
+  <h3>ROC Curve</h3>
+  <img src="../reports/roc_curve.png" alt="ROC Curve">
+
+  <h3>Training Metrics</h3>
+  <img src="../reports/train_metrics.png" alt="Training Metrics">
+</section>
+
+<section>
+  <h2>User Interface Proof</h2>
+  <p>Screenshots of the working web application interface:</p>
+  <img width="1919" height="1009" alt="Screenshot 2025-09-13 053850" src="https://github.com/user-attachments/assets/0d6ed99f-c1cd-4cc7-985c-adf65c855ea0"/>
+  <img width="1919" height="1001" alt="Screenshot 2025-09-13 053912" src="https://github.com/user-attachments/assets/3eeae69b-04ab-481b-b3c2-0a8b143755b1" />
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>
+    The project successfully demonstrates how NLP and machine learning 
+    can be applied to automatically detect hate speech in text. 
+    The trained model achieved high accuracy and good recall for detecting offensive language. 
+    The Flask-based deployment ensures real-time predictions with a user-friendly interface.
+  </p>
+</section>
+
+</body>
+</html>
